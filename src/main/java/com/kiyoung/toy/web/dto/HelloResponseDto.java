@@ -1,4 +1,4 @@
-package com.kiyoung.toy.dto;
+package com.kiyoung.toy.web.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
