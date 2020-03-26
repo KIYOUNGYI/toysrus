@@ -1,6 +1,5 @@
 package com.kiyoung.toy.web.dto;
 
-import com.kiyoung.toy.dto.HelloResponseDto;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

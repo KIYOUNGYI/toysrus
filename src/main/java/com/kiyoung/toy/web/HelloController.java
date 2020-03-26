@@ -1,6 +1,6 @@
 package com.kiyoung.toy.web;
 
-import com.kiyoung.toy.dto.HelloResponseDto;
+import com.kiyoung.toy.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
