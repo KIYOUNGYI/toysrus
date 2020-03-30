@@ -1,8 +1,7 @@
-package com.kiyoung.toy.domain.posts;
+package com.kiyoung.toy.domain;
 
 
-import com.kiyoung.toy.domain.Posts;
-import com.kiyoung.toy.domain.PostsRepository;
+import com.kiyoung.toy.domain.*;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,11 +37,11 @@ public class PostsRepositoryTest
         //when
         postsRepository.save
                 (
-                Posts.builder()
-                        .title("dummy title")
-                        .content("dummy content")
-                        .author("yky2798@gmail.com")
-                        .build()
+                        Posts.builder()
+                                .title("dummy title")
+                                .content("dummy content")
+                                .author("yky2798@gmail.com")
+                                .build()
                 );
         List<Posts> postsList = postsRepository.findAll();
 

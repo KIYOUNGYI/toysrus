@@ -1,7 +1,8 @@
 package com.kiyoung.toy.web.dto;
-
+import lombok.Getter;
 import com.kiyoung.toy.domain.Posts;
 
+@Getter
 public class PostsResponseDto
 {
     private Long id;
@@ -15,5 +16,15 @@ public class PostsResponseDto
         this.title = entity.getTitle();
         this.content = entity.getContent();
         this.author = entity.getAuthor();
+    }
+
+    @Override
+    public String toString() {
+        return "PostsResponseDto{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", author='" + author + '\'' +
+                '}';
     }
 }
